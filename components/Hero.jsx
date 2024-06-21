@@ -16,7 +16,7 @@ export default function Hero() {
                         </span>
                     </h1>
                     <p className="text-lg max-w-md text-slate-100 mt-6">A right path for your Academic Success. Start your Academic Comeback today with Success Ladder.</p>
-                    <button className="bg-amber-300 py-2 px-4 rounded-md text-lg font-bold w-48 mt-2">Let's Get Started!</button>
+                    <a href="#pick" className="bg-amber-300 py-2 px-4 rounded-md text-lg font-bold w-48 mt-2 text-center scroll-smooth">Let's Get Started!</a>
                 </div>
                 <div>
                     <Image src="/hero.jpg" width={800} height={800} alt="with/without success ladder"></Image>

@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily:{
         "brico":["Bricolage Grotesque", "sans-serif"],
+        "roboto":["Roboto", "sans-serif"],
       }
     },
   },
