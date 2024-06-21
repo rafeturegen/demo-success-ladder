@@ -1,3 +1,4 @@
+import ClassesShowcase from "@/components/ClassesShowcase";
 import Header from "@/components/Header";
 
 export default function Classes() {
@@ -5,7 +6,7 @@ export default function Classes() {
         <>
         <Header/>
         <main>
-
+            <ClassesShowcase/>
         </main>
         </>
     )

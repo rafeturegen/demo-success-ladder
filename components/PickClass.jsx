@@ -1,30 +1,43 @@
+"use client";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { useState} from "react";
 
 export default function PickClass(){
-    const settings = {
-        dots:true,
-        infinite:true,
-        speed:500,
-        slidesToShow:3,
-        slidesToScroll:1,
+    
+    const [slidesIndex, setslidesIndex] = useState(0);
+
+    function increaseHandler() {
+
+        setslidesIndex(slidesIndex + 1);
     }
+
+    function decreaseHandler() {
+
+        setslidesIndex(slidesIndex - 1);
+    }
+
+    const shownSlides = [
+        classes[slidesIndex % classes.length], 
+        classes[(slidesIndex + 1) % classes.length], 
+        classes[(slidesIndex + 2) % classes.length], 
+    ]
+
+    console.log(slidesIndex)
     return (
         <>
-        <section id="pick" className="max-w-7xl mx-auto px-8 py-5 items-center justify-between font-brico mt-12">
-            <h2 className="text-white text-xl font-bold">Pick Your Class And Start Studying</h2>
-            <div className="flex gap-8 justify-center">
-                {classes.map((c) => (
-                    <div key={c.name}>
-                        <div className="">
-                            <img src={c.image}/>
-                        </div>
-                        <div className="">
-                            <a href="" className="text-white ">{c.name}</a>
-                        </div>
+        <section id="pick" className="max-w-7xl mx-auto px-8 py-5 items-center justify-between font-brico mt-12 mb-24">
+            <h2 className="text-white text-xl font-bold mb-16 text-center">Pick Your Class And Start Studying</h2>
+            <div className="flex gap-8 justify-center mt-12 relative items-center">
+                <button className="rounded-xl bg-white w-6 h-6" onClick={decreaseHandler}>&lt;</button>
+                {shownSlides.map(slide => (
+                    <div key={slide.name} className=" px-1  bg-amber-300 w-72 h-96 rounded-md relative justify-center flex flex-col">
+                        <a href="" className="">
+                            <img src={slide.image} alt={slide.alt} className=" w-72 h-96 "/>
+                            <h2 className="text-white mt-2 w-72 absolute bottom-0 font-bold text-xl">{slide.name}</h2>
+                        </a>
                     </div>
                 ))}
+                <button onClick={increaseHandler} className= "rounded-xl bg-white w-6 h-6">&gt;</button>
             </div>
         </section>
         </>
@@ -35,25 +48,31 @@ const classes = [
     {
         name: 'Calculus 1',
         image: '/math.jpg',
+        alt:"Math",
     },
     {
         name: 'General Physics 1',
         image: '/physics.jpg',
+        alt:"physics"
     },
     {
         name: 'General Chemistry 1',
         image: '/chemistry.jpg',
+        alt:"chemistry"
     },
     {
         name: 'Calculus 2',
         image: '/math.jpg',
+        alt:"Math"
     },
     {
         name: 'General Physics 2',
         image: '/physics.jpg',
+        alt:"Physics"
     },
     {
         name: 'General Chemistry 2',
         image: '/chemistry.jpg',
+        alt:"chemistry"
     },
 ];
