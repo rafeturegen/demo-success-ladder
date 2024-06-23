@@ -1,0 +1,14 @@
+mechanics:
+----------------------------------
+Kinematics in One Dimension (17, 21, 22),80 minutes
+Kinematics in Two or Three Dimension (27-29, 33, 43-47) 117 minutes
+Dynamics-Newton's Law of Motion (50-52, 54-58, 60-64, 66-72) 240 minutes
+Using Newton's Laws (74, 76-81, 83)140 minutes
+----------------------------------
+Gravitation and Newton's Synthesis (84, 86-89) 80 minutes
+Work and Energy (93, 96) 90 minutes
+Conservation of Energy (98) 26 minutes
+Linear Momentum (102, 104, 107-112, 115) 108 minutes
+----------------------------------
+Rotational Motion (116-122, 125-127)150 minutes
+Angular Momentum (128, 130-131) 36 minutes

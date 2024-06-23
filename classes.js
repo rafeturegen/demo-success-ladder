@@ -5,12 +5,12 @@ const classes = [
         alt:"Math",
     },
     {
-        name: 'General Physics 1',
+        name: 'General Physics 1 (Mechanics)',
         image: '/physics.jpg',
         alt:"physics"
     },
     {
-        name: 'General Chemistry 1',
+        name: 'General Chemistry 1 ',
         image: '/chemistry.jpg',
         alt:"chemistry"
     },
@@ -20,7 +20,7 @@ const classes = [
         alt:"Math"
     },
     {
-        name: 'General Physics 2',
+        name: 'General Physics 2 (Electrics)',
         image: '/physics.jpg',
         alt:"Physics"
     },
@@ -28,6 +28,11 @@ const classes = [
         name: 'General Chemistry 2',
         image: '/chemistry.jpg',
         alt:"chemistry"
+    },
+    {
+        name: 'Discrete Math',
+        image: '/math.jpg',
+        alt:"Discrete Math",
     },
 ];
 

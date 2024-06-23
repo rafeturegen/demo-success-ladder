@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Pace from "@/components/Pace";
 
 export default function CLassLadder({params}) {
 
@@ -7,7 +8,7 @@ export default function CLassLadder({params}) {
         <>
         <Header/>
         <main>
-            <h1 className="text-white">Hello {decodedClassSlug}</h1>
+            <Pace slug={decodedClassSlug}/>
         </main>
         </>
     )
