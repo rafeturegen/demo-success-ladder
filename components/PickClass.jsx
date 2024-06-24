@@ -31,10 +31,10 @@ export default function PickClass(){
             <div className="flex gap-8 justify-center mt-12 relative items-center">
                 <button className="rounded-xl bg-white w-6 h-6" onClick={decreaseHandler}>&lt;</button>
                 {shownSlides.map(slide => (
-                    <div key={slide.name} className=" px-1  bg-amber-300 w-72 h-96 rounded-md relative justify-center flex flex-col">
+                    <div key={slide.name} className=" px-1  bg-amber-300 w-80 h-64 rounded-md relative justify-center flex flex-col">
                         <a href="" className="">
-                            <img src={slide.image} alt={slide.alt} className=" w-72 h-96 "/>
-                            <h2 className="text-white mt-2 w-72 absolute bottom-0 font-bold text-xl">{slide.name}</h2>
+                            <img src={slide.image} alt={slide.alt} className=" w-80 h-60 "/>
+                            <h2 className="text-white mt-2 w-72 absolute bottom-2 font-bold text-xl">{slide.name}</h2>
                         </a>
                     </div>
                 ))}
