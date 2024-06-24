@@ -18,9 +18,9 @@ export default function Header() {
           <Link href="/study" className="text-white hover:underline text-lg">
                 Study
           </Link>
-            <button className="text-white hover:underline text-lg">
+          <Link href="/contribute" className="text-white hover:underline text-lg">
                 Contribute
-            </button>
+          </Link>
           </div>
         </header>
     )

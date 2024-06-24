@@ -1,5 +1,4 @@
 import "./globals.css";
-import Header from "@/components/Header";
 
 export const metadata = {
   title: "A Path To Academic Success",
@@ -12,7 +11,6 @@ export default function RootLayout({ children }) {
       <body>
         {children}
         <div id="spotify-player"></div>
-        <script src="https://sdk.scdn.co/spotify-player.js"></script>
       </body>
     </html>
   );

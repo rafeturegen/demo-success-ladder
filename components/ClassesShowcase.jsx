@@ -35,7 +35,7 @@ export default function ClassesShowcase() {
                 </div>
                 <div className="flex flex-wrap mx-auto items-center p-8 max-w-7xl gap-16 ">
                     {searchedClasses.map(c => (
-                        <div className="bg-amber-300 p-1 rounded-md w-52 h-52 md:w-64 md:h-64 relative ">
+                        <div key={c.name} className="bg-amber-300 p-1 rounded-md w-52 h-52 md:w-64 md:h-64 relative ">
                             <Link href={`/classes/${c.name}`}>
                                 <img src={c.image} alt={c.alt} className="w-full h-full"/>
                                 <h2 className="text-white font-brico absolute bottom-0 font-bold text-lg">{c.name}</h2>
