@@ -27,7 +27,7 @@ export default function ContributeForm () {
         <>
             <section className="flex flex-col justify-center items-center max-w-7xl mx-auto font-brico mt-12">
                 <h1 className="text-white text-lg font-bold">Contributon Form</h1>
-                <h2 className="text-slate-200 text-lg w-1/2 text-center mt-8 ">You have information about classes that are not in Success Ladder and want to share it to contribute to others' academic journeys. </h2>
+                <h2 className="text-slate-200 text-lg w-1/2 text-center mt-8 ">You have information about classes that are not in Success Ladder and want to share it to contribute to others academic journeys. </h2>
                 <form onSubmit={handleSubmit} className="flex flex-col mt-2">
                     <div className="flex flex-col mt-2">
                         <label htmlFor="email" className="text-white">Your Email</label>

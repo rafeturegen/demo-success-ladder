@@ -3,6 +3,7 @@
 import { useState } from "react";
 import classes from "@/classes";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ClassesShowcase() {
 
