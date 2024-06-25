@@ -7,7 +7,7 @@ export default function Footer() {
         <footer className="max-w-7xl mx-auto px-8 py-5 flex font-brico mt-32 gap-16">
             <div className="flex flex-col gap-2 mr-16">
                 <div className="flex">
-                    <Image src="/icon.jpg" width={40} height={40}></Image>
+                    <Image src="/icon.jpg" width={40} height={40} alt="Success Ladder Icon"></Image>
                     <h2 className="text-white text-lg"><a href="#header" className="scroll-smooth">Success Ladder</a></h2>
                 </div>
                 <p className="text-slate-200 text-sm w-64">Start your Academic Comeback Today

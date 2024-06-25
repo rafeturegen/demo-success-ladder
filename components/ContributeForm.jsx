@@ -19,7 +19,7 @@ export default function ContributeForm () {
             }
         })
          
-        console.log(response);
+        console.log(data);
     }
 
     
@@ -31,15 +31,15 @@ export default function ContributeForm () {
                 <form onSubmit={handleSubmit} className="flex flex-col mt-2">
                     <div className="flex flex-col mt-2">
                         <label htmlFor="email" className="text-white">Your Email</label>
-                        <input type="text" className="rounded-sm shadow-md shadow-amber-300 w-64"/>
+                        <input type="text" name="email" className="rounded-sm shadow-md shadow-amber-300 w-64"/>
                     </div>
                     <div className="flex flex-col mt-2">
                         <label htmlFor="class" className="text-white rounded-md">Class Name</label>
-                        <input type="text" className="rounded-sm shadow-md shadow-amber-300 w-64"/>
+                        <input type="text" className="rounded-sm shadow-md shadow-amber-300 w-64" name="class"/>
                     </div>
                     <div className="flex flex-col mt-2">
                         <label htmlFor="score" className="text-white rounded-md">Which score did you get in this class?</label>
-                        <input type="text" className="rounded-sm shadow-md shadow-amber-300 w-64"/>
+                        <input type="text" className="rounded-sm shadow-md shadow-amber-300 w-64" name="score"/>
                     </div>
                     <button type="submit" className="bg-amber-300 py-2 px-4 rounded-md text-lg font-bold w-64 mt-6 text-center">Submit</button>
                 </form>

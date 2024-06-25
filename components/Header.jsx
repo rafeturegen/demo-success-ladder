@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <header id="header" className="max-w-7xl mx-auto px-8 py-5 flex flex-wrap items-center justify-between font-brico">
           <div className="flex gap-2">
-            <Image src="/icon.jpg" width={50} height={50}></Image>
+            <Image src="/icon.jpg" width={50} height={50} alt="Success Ladder Icon"></Image>
             <h2 className="text-white mt-[7px] text-xl">Success Ladder</h2>
           </div>
           <div className="flex gap-8">

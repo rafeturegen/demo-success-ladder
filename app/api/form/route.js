@@ -6,7 +6,11 @@ export async function POST(req) {
     const uri = process.env.MONGODB_URI; 
 
     const client = new MongoClient(uri);
+
+    console.log(data.Response);
+
     await client.connect();
+
     const db = client.db();
 
     const classesCollection = db.collection("classes");
