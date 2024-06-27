@@ -6,9 +6,9 @@ Welcome to Academic Comeback Pathway! This website is designed to help students 
 + Resource Library: A collection of articles, tutorials, and tools to aid in your academic journey.
 * Progress Tracking: Monitor your progress and adjust your pathway as needed.
 - Community Support: Connect with other students and mentors for advice and encouragement.
-+ Getting Started
-* Prerequisites
-+ To use our website, all you need is a modern web browser and an internet connection.
+# Getting Started
+## Prerequisites
+To use our website, all you need is a modern web browser and an internet connection.
 
 ## Installation
 No installation is required. Simply visit our website at https://success-ladder-66eu-rafeturegens-projects.vercel.app/ and create an account to get started.
