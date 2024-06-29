@@ -1,9 +1,16 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Hero() {
     return (
         <>
-            <section className="flex justify-between max-w-8xl mx-auto mt-12 font-brico text text-white px-8 py-5 items-center ml-32 mr-4 scroll-smooth">
+            <motion.section 
+            initial={{ opacity:0, y:100 }}
+            animate={{ opacity:1, y:0 }}
+            className="flex justify-between max-w-8xl mx-auto mt-12 font-brico text text-white px-8 py-5 items-center ml-32 mr-4 scroll-smooth"
+            >
                 <div className="flex flex-col gap-8">
                     <h1 class="font-extrabold text-4xl lg:text-6xl tracking-tight md:-mb-4 flex flex-col gap-3 items-center lg:items-start">
                         <span class="relative">Stop Searching</span>
@@ -21,7 +28,7 @@ export default function Hero() {
                 <div>
                     <Image src="/hero.jpg" width={800} height={800} alt="with/without success ladder"></Image>
                 </div>
-            </section>
+            </motion.section>
         </>
     )
 }
